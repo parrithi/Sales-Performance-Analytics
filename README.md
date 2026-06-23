@@ -23,7 +23,7 @@ This project is designed to demonstrate SQL skills and techniques typically used
 - **Table Creation**: A table named `retail_sales` is created to store the sales data. The table structure includes columns for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, price per unit, cost of goods sold (COGS), and total sale amount.
 
 ```sql
-CREATE DATABASE sql_project_p2;
+CREATE DATABASE sql_project_p1;
 
 --- Create Table
 DROP TABLE IF EXISTS retail_sales;
@@ -50,21 +50,49 @@ create table retail_sales(
 - **Null Value Check**: Check for any null values in the dataset and delete records with missing data.
 
 ```sql
-SELECT COUNT(*) FROM retail_sales;
-SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
-SELECT DISTINCT category FROM retail_sales;
+select 
+     count(*) 
+from retail_sales;
 
-SELECT * FROM retail_sales
-WHERE 
-    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
-    gender IS NULL OR age IS NULL OR category IS NULL OR 
-    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+ ---- Data Cleaning
 
+ SELECT * FROM RETAIL_SALES
+ WHERE 
+	 transactions_id IS NULL
+	 OR
+	 sale_date IS NULL
+	 OR
+	 sale_time IS NULL
+	 OR
+	 gender IS NULL
+	 OR
+	 category IS NULL
+	 OR
+	 quantiy IS NULL
+	 OR
+	 cogs IS NULL
+	 OR
+	 total_sale IS NULL;
+ 
+ 
+----
 DELETE FROM retail_sales
-WHERE 
-    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
-    gender IS NULL OR age IS NULL OR category IS NULL OR 
-    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+WHERE
+     transactions_id IS NULL
+	 OR
+	 sale_date IS NULL
+	 OR
+	 sale_time IS NULL
+	 OR
+	 gender IS NULL
+	 OR
+	 category IS NULL
+	 OR
+	 quantiy IS NULL
+	 OR
+	 cogs IS NULL
+	 OR
+	 total_sale IS NULL;
 ```
 
 ### 3. Data Analysis & Findings
