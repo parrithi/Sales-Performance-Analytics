@@ -1,7 +1,6 @@
 # Retail Sales Analysis SQL Project
 
-![Banner](https://github.com/parrithi/Zepto-Retail-Analytics-PostgreSQL/blob/main/Zepto_Project.png)
-
+![Banner](https://github.com/parrithi/Sales-Performance-Analytics/blob/main/Retail_Sales.png)
 ## Project Overview
 
 **Project Title**: Retail Sales Analysis  
